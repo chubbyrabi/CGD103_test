@@ -1,0 +1,716 @@
+/* ----- 文字設定 ----- */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/nevermind.min.css");
+
+.h1-style{
+    font-family: 'NeverMind','Noto Sans TC';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.4em;
+    letter-spacing: 0.05em;
+    color: var(--clr-color);
+}
+.h2-style{
+    font-family: 'NeverMind','Noto Sans TC';
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.5em;
+    letter-spacing: 0.05em;
+    text-align: inherit;
+    color: var(--clr-color);
+}
+.h3-style{
+    font-family: 'NeverMind','Noto Sans TC';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.05em;
+    text-align: inherit;
+    color: var(--clr-color);
+}
+.h4-style{
+    font-family: 'NeverMind','Noto Sans TC';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 0.05em;
+    text-align: inherit;
+    color: var(--clr-color);
+}
+.p-style{
+    font-family: 'NeverMind','Noto Sans TC';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6em;
+    letter-spacing: 0.05em;
+    text-align: justify;
+    color: var(--clr-color);
+}
+.no-letter-spacing{
+    letter-spacing: 0;
+}
+
+
+
+/* ----- 顏色設定 ----- */
+.clr-gray333{
+    --clr-color:#333;
+    --clr-fill: #333;
+}
+.clr-gray666{
+    --clr-color:#666;
+    --clr-fill: #666;
+}
+.clr-gray80{
+    --clr-color:#808080;
+    --clr-fill: #808080;
+}
+.clr-white{
+    --clr-color:#fff;
+    --clr-fill: #fff;
+}
+.clr-teal{
+    --clr-color:#00ADBB;
+    --clr-fill: #00ADBB;
+}
+.clr-teal60{
+    --clr-color:#66CED6;
+    --clr-fill: #66CED6;
+}
+.clr-teal30{
+    --clr-color:#B3E6EB;
+    --clr-fill: #B3E6EB;
+}
+.bgd--white{
+    --bgd-color: #fff;
+}
+.bgd-F6F8FB{
+    --bgd-color: #F6F8FB;
+}
+.bgd-E6E6E6{
+    --bgd-color: #E6E6E6;
+}
+
+
+
+/* ----- hvr 效果設定 ----- */
+.hvr-gray333{
+    --hvr-color: #333;
+    --hvr-fill:  #333;
+}
+.hvr-grayE6{
+    --hvr-color: #E6E6E6;
+    --hvr-fill:  #E6E6E6;
+}
+.hvr-grayF6F8FB{
+    --hvr-color: #F6F8FB;
+    --hvr-fill:  #F6F8FB;
+}
+.hvr-white{
+    --hvr-color: #fff;
+    --hvr-fill:  #fff;
+}
+.hvr-teal{
+    --hvr-color: #00ADBB;
+    --hvr-fill:  #00ADBB;
+}
+.hvr-teal60{
+    --hvr-color: #66CED6;
+    --hvr-fill:  #66CED6;
+}
+.hvr-teal30{
+    --hvr-color: #B3E6EB;
+    --hvr-fill:  #B3E6EB;
+}
+.hvr-none{
+    --hvr-color: none;
+    --hvr-fill:  none;
+}
+.hvr-bgd-white{
+    --hvr-bgd-color: #fff;
+}
+.hvr-bgd-F6F8FB{
+    --hvr-bgd-color: #F6F8FB;
+}
+.hvr-bgd-E6E6E6{
+    --hvr-bgd-color: #E6E6E6;
+}
+.hvr-op06{
+    --hvr-opacity: 0.6;
+}
+.hvr-bri095{
+    --hvr-bri: brightness(.95);
+}
+.hvr-1s{
+    --hvr-transition: 1s;
+}
+.hvr-05s{
+    --hvr-transition: 0.5s;
+}
+.hvr-03s{
+    --hvr-transition: 0.3s;
+}
+.hvr-015s{
+    --hvr-transition: 0.15s;
+}
+.hvr-scale11{
+    --hvr-scale: scale(1.1);
+}
+.hvr-scale12{
+    --hvr-scale: scale(1.2);
+}
+.hvr-pointer{
+    cursor: pointer;
+}
+
+
+/* ----- 通用設定 ----- */
+body{
+    position: relative;
+    padding-top: calc(6% + 30px);
+    /* font-size: 0; */
+    /* 去除各種間隙與 h1(logo) 文字 */
+}
+img{
+    width: 100%;
+    vertical-align:top;
+}
+svg{
+    width: 100%;
+    height: 100%;
+    fill: var(--clr-fill);
+    transition: var(--hvr-transition);
+}
+a{
+    color: var(--clr-color);
+    text-decoration: none;
+}
+span{
+    color: var(--clr-color);
+}
+figure img{
+    transform: scale(1);
+    transition: var(--hvr-transition);
+    background-color: var(--bgd-color);
+}
+figcaption{
+    position: relative;
+    padding: 5px 0;
+    font-family: 'NeverMind','Noto Sans TC';
+    color: var(--clr-color);
+    background-color: var(--bgd-color);
+}
+figcaption p{
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 0.05em;
+}
+figcaption span{
+    font-size: 12px;
+    font-weight: 300;
+}
+figure img:hover{
+    -webkit-filter: var(--hvr-bri);
+    transform: var(--hvr-scale);
+    transition: var(--hvr-transition);
+}
+
+
+
+/* ----- icon 設定 ----- */
+.icon{
+    display: inline-block;
+    --icon-width: 25px;
+    --icon-height: 25px;
+    width:  var(--icon-width);
+    height: var(--icon-height);
+}
+.icon:not(:last-child){
+    margin-right: 20px;
+}
+.icon svg{
+    width:  var(--icon-width);
+    height: var(--icon-height);
+    transform: scale(1);
+}
+
+
+
+/* ----- btn 設定 ----- */
+.btn-EN{
+    position: relative;
+    padding: 10px 50px;
+    border: none;
+    font-family: 'NeverMind';
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+.btn-TW{
+    position: relative;
+    padding: 10px 50px;
+    border: none;
+    font-family: 'Noto Sans TC';
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+.btn-teal{
+    background-color: #00ADBB;
+    color: #fff;
+}
+.btn-white{
+    outline: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+.btn-animateBox.in{
+    transform: scale(1);
+    transition: 0.5s;
+}
+.btn-animateBox, .btn-animateBox.out{
+    transform: scale(0);
+    transition: 0.5s;
+    text-align: center;
+}
+
+
+
+/* ----- header ----- */
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    background-color: #fff;
+    transition: 1s;
+}
+header.js-hd-shadow{
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+.navbar{
+    padding: 2% 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-logo svg{
+    height: 30px;
+    width: auto;
+}
+
+
+/* ----- hb-animation ----- */
+.nav-hb{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+}
+.nav-hb span{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 2.4px;
+    transform: rotate(0deg);
+    transition: 0.3s;
+    background-color: #333;
+}
+.nav-hb span:nth-child(1){
+    top: 3.8px;
+}
+.nav-hb span:nth-child(2){
+    top: 13.8px;
+    opacity: 1;
+}
+.nav-hb span:nth-child(3){
+    top: 23.8px;
+}
+.js-click.on.nav-hb span{
+    position: absolute;
+    background-color: #fff;
+    transition: 0.3s;
+}
+.js-click.on.nav-hb span:nth-child(1){
+    top: 13.8px;
+    transform: rotate(45deg);
+}
+.js-click.on.nav-hb span:nth-child(2){
+    opacity: 0;
+}
+.js-click.on.nav-hb span:nth-child(3){
+    top: 13.8px;
+    transform: rotate(-45deg);
+}
+
+/* ----- menu-animation ----- */
+.nav-menu{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 80%;
+    padding: 10%;
+    background-color: #00ADBB;
+    opacity: 0;
+    transition: opacity 0.5s, left 0s 0.5s;
+}
+.js-click.on.nav-hb + .nav-menu{
+    left: 0;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+.menu-list{
+    position: relative;
+    left: -100%;
+    transition: 0.5s;
+}
+.js-click.on.nav-hb + .nav-menu .menu-list{
+    left: 0;
+    transition: 0.5s;
+}
+.menu-logo a{
+    display: block;
+    width: 180px;
+    margin-bottom: 10px;
+}
+.menu-list>li{
+    position: relative;
+    margin: 12px;
+}
+.menu-list span{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+.menu-list>li:not(:first-child)>a:hover::before{
+    position: absolute;
+    top: -12px;
+    left: -22px;
+    content: '';
+    background-image: url("../pic/deco/shock-fff-40deg_L.svg");
+    width: 32px;
+    height: 25px;
+}
+.menu-secondList li{
+    display: inline-block;
+    margin: 7px;
+    opacity: var(--hvr-opacity);
+    transition: var(--hvr-transition);
+}
+
+
+
+/* ----- footer ----- */
+footer{
+    position: relative;
+    background-color: #00ADBB;
+}
+
+/* ----- scrollTop ----- */
+.scrollTop-hoverBox{
+    position: absolute;
+    overflow: hidden;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+    width: 50vw;
+    max-width: 400px;
+}
+.scrollTop::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 400%;
+    background-color: #B3E6EB;
+    border-radius: 50% 50% 0 0;
+}
+.scrollTop img{
+    position: relative;
+    top: 10px;
+    left: calc(50% - 20px);
+    width: 40px;
+}
+.scrollTop span{
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'NeverMind';
+    font-weight: 900;
+    white-space: nowrap;
+    color: #333;
+    font-size: 3vw;
+    bottom: 1vw;
+}
+
+/* ----- footer-area ----- */
+.footer-area{
+    margin: 150px auto 0;
+    max-width: 1380px;
+    padding: 9% 6.5%;
+}
+.footer-icon ul, .footer-info ul, .footer-icon form{
+    margin: 20px 0;
+}
+
+/* ----- footer-icon ----- */
+.footer-icon{
+    flex-shrink: 0;
+}
+.footer-logo{
+    width: 160px;
+}
+.icon-search{
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+    border: none;
+    background: none;
+    vertical-align: bottom;
+}
+.icon-search svg{
+    margin-left: -5px;
+    height: 100%;
+}
+.footer-search input{
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    background-color: #66CED6;
+    opacity: 0.3;
+}
+.footer-search input:focus{
+    outline: 0;
+    opacity: 1;
+}
+.footer-search input::placeholder{
+    color: #333;
+}
+/* 沒作用，待修改 */
+.footer-search input::-ms-clear{
+    display: none;
+}
+
+/* ----- footer-menu ----- */
+.footer-menu li{
+    position: relative;
+}
+.footer-menu li+li{
+    margin-top: 20px;
+}
+.footer-menu li:hover::before{
+    position: absolute;
+    top: -12px;
+    left: -22px;
+    content: '';
+    background-image: url("../pic/deco/shock-333-40deg_L.svg");
+    width: 32px;
+    height: 25px;
+}
+
+/* ----- footer-info ----- */
+.footer-info p:first-child{
+    font-weight: 500;
+}
+.footer-info li+li, .footer-info p{
+    margin-top: 5px;
+}
+
+
+
+/* ----- 480 < ----- */
+@media screen and (max-width: 479px){
+    .footer-search, .footer-icon .copyright{
+        display: none;
+    }
+    .footer-info .copyright{
+        margin-top: 20px;
+    }
+}
+
+/* ----- >= 480 ----- */
+@media screen and (min-width: 480px){
+    .scrollTop span{
+        font-size: 2.5vw;
+    }
+    .footer-area{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: flex-start;
+    }
+    .footer-icon, .footer-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-icon ul, .footer-info ul{
+        flex-grow: 1;
+    }
+    .footer-info .copyright{
+        display: none;
+    }
+}
+
+/* ----- 768 < ----- */
+@media screen and (max-width: 767px){
+    .footer-info{
+        margin-top: 40px;
+    }
+}
+
+/* ----- >= 768 ----- */
+@media screen and (min-width: 768px){
+    /* ----- scrollTop 動畫 hover 縮放 ----- */
+    .scrollTop-hoverBox{
+        padding: 20px 20px 0;
+        top: -100px;
+        height: 80px;
+    }
+    .scrollTop{
+        width: 100%;
+        height: 100%;
+        transform: scale(1);
+        transition: 0.5s;
+    }
+    .scrollTop img{
+        top: 15px;
+        left: calc(50% - 25px);
+        width: 50px;
+    }
+    .scrollTop span{
+        font-size: 16px;
+        bottom: 10px;
+    }
+    .footer-area{
+        flex-wrap: nowrap;
+    }
+    .footer-menu{
+        margin: 0 30px;
+    }
+}
+
+
+
+/* ----- >= 1024 ----- */
+@media screen and (min-width: 1024px){
+    /* ----- 文字設定 ----- */
+    .h1-style{
+        font-size: 35px;
+    }
+    .h2-style{
+        font-size: 28px;
+    }
+}
+
+
+
+/* ----- >= 1200 ----- */
+@media screen and (min-width: 1200px){
+    /* ----- 文字設定 ----- */
+    .h1-style{
+        font-size: 40px;
+    }
+    .h2-style{
+        font-size: 30px;
+    }
+    /* ----- 通用設定 ----- */
+    body{
+        padding-top: 70px;
+    }
+    svg:hover{
+        fill: var(--hvr-fill);
+        transition: var(--hvr-transition);
+    }
+    /* ----- icon 設定 ----- */
+    .icon svg:hover{
+        fill: var(--hvr-fill);
+        transform: var(--hvr-scale);
+        transition: var(--hvr-transition);
+    }
+    /* ----- btn 設定 ----- */
+    .btn-teal:hover{
+        outline: 2px solid #00ADBB;
+        background-color: #fff;
+        color: #00ADBB;
+    }
+    .btn-white:hover{
+        background-color: #fff;
+        color: #00ADBB;
+    }
+    .btn-EN:hover::after, .btn-TW:hover::after{
+        position: absolute;
+        top: -30px;
+        right: -40px;
+        content: '';
+        background-position: center;
+        background-size: contain;
+        width: 45px;
+        height: 35px;
+        transform: none;
+    }
+    .btn-teal:hover::after{
+        background-image: url("../pic/deco/shock-teal-40deg_R.svg");
+    }
+    .btn-white:hover::after{
+        background-image: url("../pic/deco/shock-fff-40deg_R.svg");
+    }
+    /* ----- header ----- */
+    .navbar{
+        padding: 20px 10px;
+        max-width: 1380px;
+        margin: auto;
+    }
+    .nav-hb:hover span{
+        background-color: #00ADBB;
+        transition: 0.3s;
+    }
+    .js-click.on.nav-hb:before{
+        position: absolute;
+        right: 130%;
+        content: 'Close';
+        font-family: 'Noto Sans TC';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.6em;
+        letter-spacing: 0.05em;
+        color: #fff;
+    }
+    .nav-menu{
+        width: calc(100% - 240px);
+        padding: 0 120px;
+    }
+    .menu-list{
+        max-width: 1200px;
+        margin: auto;
+        left: 0; /* 不要動畫 */
+        top: 50%;
+        transform: translateY( -50%);
+        display: grid;
+        grid-auto-flow: column;
+        /* grid-template-rows: 2fr 2fr 1fr; */
+        grid-template-columns: 3fr 4fr 280px;
+        gap: 50px 30px;
+    }
+    .menu-logo{
+        grid-row: 1/4;
+    }
+    .menu-secondList li a:hover{
+        color: var(--hvr-color);
+        transition: var(--hvr-transition);
+    }
+    /* ----- footer ----- */
+    .scrollTop:hover{
+        transform: scale(1.15);
+        transition: 0.5s;
+    }
+    .footer-area{
+        padding: 100px 50px;
+    }
+    .footer-info a:hover{
+        opacity: var(--hvr-opacity);
+    }
+}
